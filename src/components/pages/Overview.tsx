@@ -1,7 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@components/ui/card";
-import { Button } from "@components/ui/button";
-import { Badge } from "@components/ui/badge";
-import { Skeleton } from "@components/ui/skeleton";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 import { TrendingUp, Users, Video, Eye, Plus, MoreHorizontal } from "lucide-react";
 
@@ -132,16 +131,64 @@ export function Overview() {
                                     {video.views} views
                                  </span>
                                  <span className="text-sm text-muted-foreground">.</span>
+                                 <span className="text-sm text-muted-foreground">
+                                    {video.date}
+                                 </span>
                               </div>
-
+                           </div>
+                           <div className="flex items-center gap-2">
+                              <Badge variant="secondary">{video.status}</Badge>
+                              <Button
+                                 variant="ghost"
+                                 size="icon"
+                                 className="button-press"
+                              >
+                                 <MoreHorizontal className="h-4 w-4"/>
+                              </Button>
                            </div>
                         </div>
                      ))}
                   </div>
                </CardContent>
             </Card>
-         </div>
 
+            {/* {Analytics Preview} */}
+            <Card className="card-hover">
+               <CardHeader>
+                  <CardTitle className="text-black">Analytics</CardTitle>
+                  <CardDescription>
+                     Performance overview for the last 30 days.
+                  </CardDescription>
+               </CardHeader>
+               <CardContent>
+                  <div className="space-y-4">
+                     <div className="flex items-center justify-between">
+                        <span className="text-sm font-medium">Views</span>
+                        <span className="text-sm text-muted-foreground">34,231</span>
+                     </div>
+                     <div className="w-full bg-secondary rounded-full h-2">
+                        <div className="bg-black h-2 rounded-full w-[68%] animate-pulse-subtle"></div>
+                     </div>
+
+                     <div className="flex items-center justify-between">
+                        <span className="text-sm font-medium">Engagement</span>
+                        <span className="text-sm text-muted-foreground">69.2%</span>
+                     </div>
+                     <div className="w-full bg-secondary rounded-full h-2">
+                        <div className="bg-black h-2 rounded-full w-[89%] animate-pulse-subtle"></div>
+                     </div>
+
+                     <div className="flex items-center justify-between">
+                        <span className="text-sm font-medium">Retention</span>
+                        <span className="text-sm text-muted-foreground">75.6%</span>
+                     </div>
+                     <div className="w-full bg-secondary rounded-full h-2">
+                        <div className="bg-black h-2 rounded-full w-[76%] animate-pulse-subtle"></div>
+                     </div>
+                  </div>
+               </CardContent>
+            </Card>
+         </div>
       </div>
-   )
+   );
 }
