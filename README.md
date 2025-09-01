@@ -75,7 +75,7 @@ npm run preview
 
 ## 📸 Screenshots
 
-![Overview] (./public/previews/Screenshot%202025-09-01%20at%205.27.07 PM.png) (public/previews/Screenshot 2025-09-01 at 5.27.15 PM.png)
+![Overview](./public/previews/Screenshot%202025-09-01%20at%205.27.07 PM.png)
 
 ---
 
