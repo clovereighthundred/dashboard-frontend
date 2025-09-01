@@ -3,6 +3,14 @@
 /* @plugin "tailwindcss-animate";
 @import "tw-animate-css"; */
 
+/* .card-hover {
+  @apply hover:bg-gray-100 transition-all duration-200 rounded-xl shadow-md ;
+} */
+
+.card-hover {
+  @apply transition-all duration-300 ease-in-out transform hover:scale-102 hover:-translate-y-1 hover:bg-gray-100 rounded-xl shadow-md;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -120,4 +128,3 @@
     @apply bg-background text-foreground;
   }
 }
-
