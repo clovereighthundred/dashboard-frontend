@@ -106,7 +106,7 @@ function Profile() {
               <div className="flex items-center gap-6">
                 <div className="relative">
                   <Avatar className="h-20 w-20">
-                    <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=user" />
+                    <AvatarImage src="src/assets/userprofiles/036f2074-a18f-4348-ba9d-6e7209a15db8.jpeg" />
                     <AvatarFallback className="text-lg">AA</AvatarFallback>
                   </Avatar>
                   {isEditing && (
