@@ -54,21 +54,21 @@ const stats = [
 const recentVideos = [
   {
     id: 1,
-    title: "Getting Started with React",
+    title: "Race Highlights | 2025 Saudi Arabian Grand Prix",
     views: "12.5K",
     status: "Published",
     date: "2 days ago",
   },
   {
     id: 2,
-    title: "Advanced TypeScript Tips",
+    title: '13" M4 MacBook Air Review',
     views: "8.2K",
     status: "Published",
     date: "5 days ago",
   },
   {
     id: 3,
-    title: "Introduction to AI Engineering",
+    title: "Error Handling in React",
     views: "15.1K",
     status: "Published",
     date: "1 week ago",
