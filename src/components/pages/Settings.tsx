@@ -14,7 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Bell,
   Shield,
-  Pallete,
+  Palette,
   Globe,
   Download,
   Trash2,
@@ -116,7 +116,7 @@ function Settings() {
           <Card className="card-hover">
             <CardHeader>
               <div className="flex items-center gap-2">
-                <Pallete className="h-5 w-5" />
+                <Palette className="h-5 w-5" />
                 <CardTitle className="text-black">Appearance</CardTitle>
               </div>
               <CardDescription>
