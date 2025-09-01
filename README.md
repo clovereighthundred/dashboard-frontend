@@ -1,69 +1,102 @@
-# React + TypeScript + Vite
+# 📊 Dashboard Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and minimalistic **dashboard web application** built with **React, TypeScript, TailwindCSS, and shadcn/ui**.  
+The project demonstrates clean UI design, reusable components, and an intuitive user experience tailored for data-driven applications.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [View Dashboard](https://dashboard-frontend-delta-five.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Responsive UI** – Works seamlessly across desktops, tablets, and mobile devices.
+- **Interactive Cards & Widgets** – Displays key metrics with hover and scaling effects.
+- **Reusable Components** – Built with shadcn/ui and custom TailwindCSS utilities.
+- **Smooth Animations** – Page load and hover transitions powered by Framer Motion.
+- **Scalable Architecture** – Component-driven design for easy extension and maintenance.
+- **Dark Mode Ready** – (if implemented; otherwise note: _future enhancement_).
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React + TypeScript** – Core framework for building a modular frontend.
+- **TailwindCSS v4.1** – Utility-first styling for rapid and consistent design.
+- **shadcn/ui** – Prebuilt, accessible UI components with customization support.
+- **Vite** – Fast bundler and development environment.
+
+---
+
+## 📂 Project Structure
+
+```bash
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page-level components
+│   ├── hooks/           # Custom React hooks (if any)
+│   ├── utils/           # Helper functions
+│   ├── App.tsx          # Root component
+│   └── main.tsx         # Entry point
+└── tailwind.config.js   # TailwindCSS configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/clovereighthundred/dashboard-frontend.git
+cd dashboard-frontend
+npm install
 ```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📸 Screenshots
+
+![Dashboard Overview](./public/previews)
+
+---
+
+## 🌱 Future Improvements
+
+- ✅ Add user authentication and role-based access.
+- ✅ Integrate real API data for live metrics.
+- ✅ Add Dark Mode support.
+- ✅ Expand widget library for different data visualizations.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – you are free to use, modify, and distribute with attribution.
+
+---
