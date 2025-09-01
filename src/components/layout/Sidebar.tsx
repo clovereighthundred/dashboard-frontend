@@ -72,7 +72,7 @@ function Sidebar() {
       <div className="p-4 border-t border-border">
         <div className="flex items-center gap-3">
           <Avatar className="h-8 w-8">
-            <AvatarImage src="src/assets/userprofiles/036f2074-a18f-4348-ba9d-6e7209a15db8.jpeg" />
+            <AvatarImage src="/userprofiles/036f2074-a18f-4348-ba9d-6e7209a15db8.jpeg" />
             <AvatarFallback>AA</AvatarFallback>
           </Avatar>
           {!isCollapsed && (

@@ -27,7 +27,7 @@ const videos = [
     id: 1,
     title: "Race Highlights | 2025 Saudi Arabian Grand Prix",
     thumbnail:
-      "src/assets/thumbnails/2025 Saudi Arabian GP - George Russell & Lando Norris.jpg",
+      "/thumbnails/2025 Saudi Arabian GP - George Russell & Lando Norris.jpg",
     views: "12.5K",
     status: "Published",
     date: "2024-01-24",
@@ -36,8 +36,7 @@ const videos = [
   {
     id: 2,
     title: '13" M4 MacBook Air Review',
-    thumbnail:
-      "src/assets/thumbnails/Apple-MacBook-Air-hero-250305_big.jpg.large_2x.jpg",
+    thumbnail: "/thumbnails/Apple-MacBook-Air-hero-250305_big.jpg.large_2x.jpg",
     views: "8.2K",
     status: "Published",
     date: "2024-02-13",
@@ -46,7 +45,7 @@ const videos = [
   {
     id: 3,
     title: "Error handling in React",
-    thumbnail: "src/assets/thumbnails/errors.png",
+    thumbnail: "/thumbnails/errors.png",
     views: "0",
     status: "Draft",
     date: "2024-02-29",
@@ -55,7 +54,7 @@ const videos = [
   {
     id: 4,
     title: "Introduction to AI Engineering",
-    thumbnail: "src/assets/thumbnails/billCipher.png",
+    thumbnail: "/thumbnails/billCipher.png",
     views: "15.1K",
     status: "Published",
     date: "2024-04-17",
