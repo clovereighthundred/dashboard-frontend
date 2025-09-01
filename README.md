@@ -1,4 +1,4 @@
-# 📊 Dashboard Project
+# 📊 Dashboard UI
 
 A modern, responsive, and minimalistic **dashboard web application** built with **React, TypeScript, TailwindCSS, and shadcn/ui**.  
 The project demonstrates clean UI design, reusable components, and an intuitive user experience tailored for data-driven applications.
@@ -75,7 +75,7 @@ npm run preview
 
 ## 📸 Screenshots
 
-![Dashboard Overview](./public/previews)
+![Overview] (./public/previews/Screenshot%202025-09-01%20at%205.27.07 PM.png) (public/previews/Screenshot 2025-09-01 at 5.27.15 PM.png)
 
 ---
 
