@@ -55,6 +55,7 @@ function Sidebar() {
               key={item.name}
               to={item.href}
               className={cn(
+                "flex items-center gap-3 px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors",
                 "nav-item",
                 isActive && "active",
                 "animate-fade-in"
